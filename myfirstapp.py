@@ -10,7 +10,7 @@ option = st.sidebar.selectbox(
 
 if option=='line chart':
     chart_kau = pd.DataFrame(
-      np.random.randn(20, 3),
+      np.random.randn(20, 3),      #dia generate line chart dengan random value
       columns=['a', 'b', 'c'])
     st.line_chart(chart_kau)
 
