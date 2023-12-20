@@ -7,7 +7,7 @@ st.header("#My first Streamlit App")
 
 option = st.sidebar.selectbox(
     'Select a mini project',
-     ['line chart','map','T n C'],'Long Process')   #tajuk selectbox,[value]
+     ['line chart','map','T n C','Long Process'])   #tajuk selectbox,[value]
 
 if option=='line chart':
     chart_kau = pd.DataFrame(
