@@ -8,6 +8,12 @@ option = st.sidebar.selectbox(
     'Select a mini project',
      ['line chart','map','T n C'])   #tajuk selectbox,[value]
 
+if option=='line chart':
+    chart_kau = pd.DataFrame(
+      np.random.randn(20, 3),
+      columns=['a', 'b', 'c'])
+    st.line_chart(chart_kau)
+
 st.write('Before you continue, please read the [terms and conditions](https://www.gnu.org/licenses/gpl-3.0.en.html)')
 show = st.checkbox('I agree the terms and conditions')
 if show:
