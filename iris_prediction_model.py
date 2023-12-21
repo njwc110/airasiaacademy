@@ -31,8 +31,8 @@ X = data.drop(['species'],axis=1)
 Y = data.species.copy()
 
 iris_model = pickle.load(open("IrisPrediction.h5", "rb")) #rb: read binary
-prediction = irismodel.predict(df)
-prediction_proba = irismodel.predict_proba(df)
+prediction = iris_model.predict(df)
+prediction_proba = iris_model.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
 st.write(Y.unique())
