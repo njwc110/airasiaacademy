@@ -1,7 +1,7 @@
 import streamlit as st  
 import pandas as pd
 import seaborn as sns
-from sklearn.svm
+from sklearn.svm import SVC
 
 st.write("# Simple Iris Flower Prediction App")
 st.write("This app predicts the **Iris flower** type!")
