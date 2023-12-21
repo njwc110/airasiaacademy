@@ -31,9 +31,6 @@ X = data.drop(['species'],axis=1)
 Y = data.species.copy()
 
 iris_model = pickle.load(open("IrisPrediction.h5", "rb")) #rb: read binary
-irismodel.fit(X,Y)
-
-
 prediction = irismodel.predict(df)
 prediction_proba = irismodel.predict_proba(df)
 
